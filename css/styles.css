@@ -1,0 +1,382 @@
+@import url('https://fonts.googleapis.com/css?family=Lato:100,100i,400,700&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Lato', sans-serif;
+}
+
+.main_head {
+    background-image: url(../img/main\ image.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 704px;
+    padding: 25px 75px;
+}
+
+header {
+    position: relative;
+}
+
+.login {
+    position: absolute;
+    top: 25px;
+    right: 0px;
+    text-transform: uppercase;
+}
+
+.login a {
+    font-weight: bold;
+    font-size: 14px;
+    text-decoration: none;
+    color: #FFF;
+}
+
+.login a:not(:nth-child(1)) {
+    padding-left: 24px;
+}
+
+.login a:last-child {
+    padding-right: 2px;
+}
+
+.started {
+    text-align: center;
+    font-weight: bold;
+    color: #FFF;
+    margin-top: 190px;
+}
+
+.title {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 36px;
+    font-style: italic;
+    font-weight: normal;
+    color: #ebe0dd;
+    margin: 0;
+}
+
+.started h1 {
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 100px;
+    margin: 0;
+}
+
+.started button {
+    font-size: 18px;
+    text-transform: uppercase;
+    color: #FFF;
+    padding: 22px 78px;
+    background: transparent;
+    font-weight: bold;
+    outline: none;
+    border: 4px solid #FFF;
+    border-radius: 4px;
+    margin: 20px 0;
+}
+
+.started button:hover {
+    cursor: pointer;
+}
+
+.subtitle {
+    font-weight: normal;
+}
+
+.atribs {
+    font-size: 0;
+    margin: 100px auto;
+    width: 1060px;
+    max-width: 96%;
+}
+
+.get {
+    text-align: center;
+    width: 22%;
+    margin: 0;
+    display: inline-block;
+    width: calc((100% - 12%)/3);
+    margin: 0 2%;
+}
+
+.get h2 {
+    font-size: 18px;
+    text-transform: uppercase;
+    margin: 0;
+}
+
+.get p {
+    font-size: 16px;
+    font-weight: 400;
+    color: #8d8f92;
+}
+
+.get hr {
+    width: 88px;
+    border-color: #f57365;
+    border-width: 0.5px;
+    margin-bottom: 18px;
+    margin-top: 8px;
+}
+
+.icon {
+    width: 100px;
+    height: 100px;
+    border: 2px solid #000;
+    border-radius: 50%;
+    margin: 0 auto 20px;
+    position: relative;
+}
+
+.icon img {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.fudiapp {
+    background-color: #f7f7f7;
+    padding: 80px 14% 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.iphone {
+    width: 360px;
+    padding-right: 30px;
+    flex-shrink: 0;
+}
+
+.iphone img {
+    width: 100%;
+    vertical-align: bottom;
+}
+
+.aboutapp {
+    padding-top: 30px;
+    min-width: 383px;
+    max-width: 550px;
+    max-height: 487px;
+    vertical-align: top;
+}
+
+.aboutapp p {
+    margin: 30px 0;
+}
+
+.aboutapp hr {
+    border: 0.5px solid #f57365;
+    width: 80px;
+    margin: 0 auto 0 0;
+}
+
+.slider {
+    height: 390px;
+    position: relative;
+}
+
+.slider input {
+    display: none;
+}
+
+.sl {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    z-index: -1;
+}
+
+.aboutsl {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: #fff;
+    width: 80%;
+}
+
+.aboutsl p {
+    font-size: 36px;
+    font-weight: lighter;
+    min-width: 580px;
+    max-height: 123px;
+    margin: 20px 0;
+    overflow: hidden;
+}
+
+.aboutsl span {
+    font-size: 20px;
+    font-weight: lighter;
+    font-style: italic;
+}
+
+.slbg {
+    position: relative;
+    left: 50%;
+    transform: translate(-50%, 0);
+}
+
+.navig {
+    width: 100%;
+    height: 12px;
+    position: absolute;
+    text-align: center;
+    bottom: 15px;
+    z-index: 99;
+}
+
+.dots {
+    display: inline-block;
+    background-color: rgba(255, 255, 255, 0.7);
+    border-radius: 50%;
+    width: 14px;
+    height: 14px;
+    position: relative;
+    margin: 0 3px;
+}
+
+#i1:checked ~ #one,
+#i2:checked ~ #two,
+#i3:checked ~ #three {
+    z-index: 1;
+}
+
+#i1:checked ~ .navig #dot1,
+#i2:checked ~ .navig #dot2,
+#i3:checked ~ .navig #dot3 {
+    background: #fff;
+}
+
+.foods {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    margin: 30px 0;
+}
+
+.food-sec {
+    margin: 0 0 50px;
+}
+
+.food {
+    max-width: 20%;
+    overflow: hidden;
+    position: relative;
+    height: 225px;
+}
+
+.food-sec h3 {
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 18px;
+    text-align: center;
+    max-width: 80%;
+    margin: 80px auto 6px;
+}
+
+.food-sec hr {
+    border: 0.5px solid #f57365;
+    width: 80px;
+}
+
+.food span {
+    display: block;
+    text-align: center;
+}
+
+.food-name {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-transform: uppercase;
+    color: white;
+    font-size: 26px;
+    font-weight: bold;
+}
+
+.food-count {
+    color: white;
+    font-size: 16px;
+    position: absolute;
+    top: 38%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: 'Times New Roman', Times, serif;
+    font-style: italic;
+}
+
+.food-count::after {
+    content: " Recipies";
+}
+
+.statiss {
+    max-width: 96%;
+    margin: 50px auto 0;
+    font-size: 0;
+}
+
+.statis {
+    text-align: center;
+    font-size: 26px;
+    font-weight: bold;
+    display: inline-block;
+    width: 20%;
+}
+
+.statis span {
+    display: block;
+}
+
+.stat-name {
+    font-size: 14px;
+    font-weight: 400;
+    margin: 5px 0;
+}
+
+footer {
+    background: #f7f7f7;
+    border-top: 1px solid #e2e2e2;
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 50px;
+    align-items: center;
+}
+
+footer span {
+    max-width: 290px;
+    max-height: 50px;
+    overflow: hidden;
+}
+
+.rights {
+    font-size: 14px;
+    color: #8d8f92;
+}
+
+.by {
+    font-size: 14px;
+    letter-spacing: 1.3px;
+}
+
+/* 
+ВНИМАНИЕ!!!
+Я испробовал много чего нового в этом проекте, и столкнулся с разными трудностями.
+Код очень далеко не идеальный, но макет сверстал как надо. Я не добавлял функционал,
+в местах где итак всё просто и понятно, например стили кнопки при наведении. Но
+при этом я сделал слайдер. Так что не судите по мелочам, в будущем я буду верстать
+все макеты до мелочей, просто сейчас мало времени. */
